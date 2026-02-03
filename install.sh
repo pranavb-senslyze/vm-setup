@@ -180,9 +180,19 @@ main() {
     
     echo ""
     log_info "Setup complete!"
-    log_info "Run 'source ~/.bashrc' or start a new shell to use your tools"
     echo ""
     log_info "Tools installed: $(echo $TOOLS | tr '\n' ' ')"
+    echo ""
+    
+    # Source bashrc to make tools available immediately (within this script session)
+    if [ -f "$BASHRC" ]; then
+        log_info "Activating tools in current session..."
+        source "$BASHRC"
+        log_info "Tools are now available in this session!"
+    fi
+    
+    echo ""
+    log_info "Tip: Start a new shell or run 'exec bash' for tools in new sessions"
 }
 
 main "$@"
