@@ -9,7 +9,7 @@
     "zoxide": {
       "version": "latest",
       "bashrc": [
-        "eval \"$(zoxide init bash)\""
+        "eval \"$(zoxide init bash --cmd cd)\""
       ]
     },
     "ripgrep": {
