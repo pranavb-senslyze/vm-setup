@@ -15,6 +15,13 @@
     "ripgrep": {
       "version": "latest",
       "bashrc": []
+    },
+    "opencode": {
+      "version": "latest",
+      "bashrc": [
+        "# Opencode",
+        "alias oc=\"opencode\""
+      ]
     }
   },
   "global_bashrc": [
