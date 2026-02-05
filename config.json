@@ -16,6 +16,10 @@
       "version": "latest",
       "bashrc": []
     },
+    "croc": {
+      "version": "latest",
+      "bashrc": []
+    },
     "opencode": {
       "version": "latest",
       "bashrc": [
